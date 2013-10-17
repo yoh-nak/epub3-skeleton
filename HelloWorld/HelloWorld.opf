@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<package version="3.0" xmlns="http://www.idpf.org/2007/opf" unique-identifier="BookID">
+	<metadata xmlns:dc="http://purl.org/dc/elements/1.1">
+		<dc:title>Hello World</dc:title>
+		<dc:identifier id="BookID">0-1234-5678-9</dc:identifier>
+		<dc:date>2011-10-14T12:00:00Z</dc:date>
+		<dc:creator>ナカノヨウスケ</dc:creator>
+		<dc:publisher>self</dc:publisher>
+		<meta property="dcterms:modified">2011-08-16T12:00:00Z</meta>
+		<dc:language>js</dc:language>
+	</metadata>
+
+	<manifest>
+		<item id="toc" properties="nav" href="nav.xhtml" media-type="application/xhtml+xml" />
+		<item id="coverpage" href="cover.xhtml" media-type="application/xhtml+xml" />
+		<item id="coverimage" properties="cover-image" href="images/cover.jpg" media-type="image/jpeg" />
+		<item id="stylesheet" href="css/stylesheet.css" media-type="text/css" />
+		<item id="main01" href="main01.xhtml" media-type="application/xhtml+xml" />
+		<item id="main02" href="main02.xhtml" media-type="application/xhtml+xml" />
+	</manifest>
+
+	<spine page-progression-direction="ltr">
+		<itemref idref="coverpage" linear="yes" />
+		<itemref idref="toc" linear="yes" />
+		<itemref idref="main01" linear="yes" />
+		<itemref idref="main02" linear="yes" />
+	</spine>
+</package>
